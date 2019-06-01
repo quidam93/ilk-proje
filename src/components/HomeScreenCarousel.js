@@ -9,9 +9,6 @@ const imageArray = [
 ];
 
 const dWidth = Dimensions.get("window").width;
-inactiveColor = "red";
-activeColor = "blue";
-
 
 const HomeScreenCarousel = () => (
   <View style={styles.container}
