@@ -5,11 +5,16 @@ import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 const HomeScreenButton = props => {
   const { data, index } = props;
 
+  const textStyle={
+    color:"#2c313c",
+    size:"24",
+  }
+
   const styles = {
-    backgroundColor: "#ecf0f1",
+    backgroundColor: "#53c4c9",
     width: "50%",
     height: "50%",
-    shadowColor: "red",
+    shadowColor: "black",
     shadowOpacity: 0.4,
     alignItems: "center",
     flexDirection: "row",
@@ -26,14 +31,14 @@ const HomeScreenButton = props => {
     <TouchableOpacity style={styles}>
       {index % 2 === 0 ? (
         <View style={{ flexDirection: "row", alignItems: "center" }}>
-          <MaterialIcons name={`${data.icon}`} size={32} />
-          <Text>{data.title}</Text>
+          <MaterialIcons name={`${data.icon}`} size={32} style={{color:"#2c313c"}}/>
+          <Text style={textStyle} size={64}>{data.title}</Text>
         </View>
       ) : (
         <View style={{ flexDirection: "row", alignItems: "center" }}>
-          <Text>{data.title}</Text>
+          <Text style={textStyle} size={64}>{data.title}</Text>
 
-          <MaterialIcons name={`${data.icon}`} size={32} />
+          <MaterialIcons name={`${data.icon}`} size={32} style={{color:"#2c313c"}}/>
         </View>
       )}
     </TouchableOpacity>
