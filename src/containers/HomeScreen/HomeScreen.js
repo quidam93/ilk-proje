@@ -1,7 +1,32 @@
 import React, { Component } from "react";
 import { View, Text, Button } from "react-native";
 import HomeScreenCarousel from "../../components/HomeScreenCarousel";
-import HomeScreenButton from "../../components/HomeScreenButton.js/HomeScreenButton";
+import HomeScreenButton from "../../components/HomeScreenButton/HomeScreenButton";
+import HomeScreenProfileImage from "../../components/HomeScreenProfileImage";
+
+
+const buttonData = [
+  {
+    icon : "date-range",
+    title:"Takvim",
+    path:"ContactScreen"
+  },
+  {
+    icon : "date-range",
+    title:"Takvim",
+    path:"ContactScreen"
+  },
+  {
+    icon : "date-range",
+    title:"Takvim",
+    path:"ContactScreen"
+  },
+  {
+    icon : "date-range",
+    title:"Takvim",
+    path:"ContactScreen"
+  },
+]
 
 class HomeScreen extends Component {
   render() {
@@ -15,13 +40,16 @@ class HomeScreen extends Component {
             backgroundColor: "blue",
             flex: 1,
             flexDirection: "row",
-            flexWrap: "wrap"
+            flexWrap: "wrap",
+            justifyContent:"center"
           }}
         >
-          <HomeScreenButton />
-          <HomeScreenButton />
-          <HomeScreenButton />
-          <HomeScreenButton />
+          {
+            buttonData.map((item,i)=>(
+              <HomeScreenButton  key={i} data={item} index={i}/>
+            ))
+          }
+          <HomeScreenProfileImage></HomeScreenProfileImage>
         </View>
         <View style={{ backgroundColor: "orange", flex: 3 }} />
       </View>
