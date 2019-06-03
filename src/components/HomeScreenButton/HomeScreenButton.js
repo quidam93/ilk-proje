@@ -2,12 +2,17 @@ import React from "react";
 import { TouchableOpacity, Text, View } from "react-native";
 import { Ionicons, MaterialIcons } from "@expo/vector-icons";
 
-const HomeScreenButton = props => {
-  const { data, index } = props;
 
-  const textStyle={
-    color:"#2c313c",
-    size:"24",
+
+
+
+const HomeScreenButton = props => {
+  const { data, index, navigasyon } = props;
+
+
+  const textStyle = {
+    color: "#2c313c",
+    size: "24",
   }
 
   const styles = {
@@ -27,20 +32,26 @@ const HomeScreenButton = props => {
     Object.assign(styles, { justifyContent: "flex-start" });
   }
 
+
+  const navigate = (path) => {
+    navigasyon(path);
+  }
+
+
   return (
-    <TouchableOpacity style={styles}>
+    <TouchableOpacity style={styles} onPress={() => navigate(data.rPath)}>
       {index % 2 === 0 ? (
         <View style={{ flexDirection: "row", alignItems: "center" }}>
-          <MaterialIcons name={`${data.icon}`} size={32} style={{color:"#2c313c"}}/>
+          <MaterialIcons name={`${data.icon}`} size={32} style={{ color: "#2c313c" }} />
           <Text style={textStyle} size={64}>{data.title}</Text>
         </View>
       ) : (
-        <View style={{ flexDirection: "row", alignItems: "center" }}>
-          <Text style={textStyle} size={64}>{data.title}</Text>
+          <View style={{ flexDirection: "row", alignItems: "center" }}>
+            <Text style={textStyle} size={64}>{data.title}</Text>
 
-          <MaterialIcons name={`${data.icon}`} size={32} style={{color:"#2c313c"}}/>
-        </View>
-      )}
+            <MaterialIcons name={`${data.icon}`} size={32} style={{ color: "#2c313c" }} />
+          </View>
+        )}
     </TouchableOpacity>
   );
 };

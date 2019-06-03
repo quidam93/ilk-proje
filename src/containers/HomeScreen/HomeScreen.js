@@ -9,22 +9,22 @@ const buttonData = [
   {
     icon: "date-range",
     title: "Takvim",
-    path: "ContactScreen"
+    rPath: "ContactScreen"
   },
   {
     icon: "date-range",
     title: "Takvim",
-    path: "ContactScreen"
+    rPath: "ContactScreen2"
   },
   {
     icon: "date-range",
     title: "Takvim",
-    path: "ContactScreen"
+    rPath: "ContactScreen3"
   },
   {
     icon: "date-range",
     title: "Takvim",
-    path: "ContactScreen"
+    rPath: "ContactScreen4"
   }
 ];
 
@@ -32,52 +32,60 @@ const bottomButtonData = [
   {
     icon: "date-range",
     title: "TAKVİM",
-    path: "ContactScreen"
+    rPath: "ContactScreen"
   },
   {
     icon: "date-range",
     title: "TAKVİM",
-    path: "ContactScreen"
+    rPath: "ContactScreen"
   },
   {
     icon: "date-range",
     title: "TAKVİM",
-    path: "ContactScreen"
+    rPath: "ContactScreen"
   },
   {
     icon: "date-range",
     title: "TAKVİM",
-    path: "ContactScreen"
+    rPath: "ContactScreen"
   },
   {
     icon: "date-range",
     title: "TAKVİM",
-    path: "ContactScreen"
+    rPath: "ContactScreen"
+  },
+  {
+    icon: "work",
+    title: "PROJELER",
+    rPath: "ProjectScreen"
   },
   {
     icon: "date-range",
     title: "TAKVİM",
-    path: "ContactScreen"
+    rPath: "ContactScreen"
   },
   {
     icon: "date-range",
     title: "TAKVİM",
-    path: "ContactScreen"
+    rPath: "ContactScreen"
   },
   {
     icon: "date-range",
     title: "TAKVİM",
-    path: "ContactScreen"
-  },
-  {
-    icon: "date-range",
-    title: "TAKVİM",
-    path: "ContactScreen"
+    rPath: "ContactScreen"
   },
 ];
 
 class HomeScreen extends Component {
+
+  static navigationOptions = {
+    title: 'Ana Sayfa',
+  }
+
   render() {
+
+    const { navigate } = this.props.navigation;
+
     return (
       <View style={{ backgroundColor: "red", flex: 1 }}>
         <View style={{ backgroundColor: "yellow", flex: 2 }}>
@@ -89,11 +97,12 @@ class HomeScreen extends Component {
             flex: 1,
             flexDirection: "row",
             flexWrap: "wrap",
-            justifyContent: "center"
+            justifyContent: "center",
+            alignItems: 'center',
           }}
         >
           {buttonData.map((item, i) => (
-            <HomeScreenButton key={i} data={item} index={i} />
+            <HomeScreenButton key={i} data={item} index={i} navigasyon={navigate} />
           ))}
           <HomeScreenProfileImage />
         </View>
@@ -106,7 +115,7 @@ class HomeScreen extends Component {
           }}
         >
           {bottomButtonData.map((item, i) => (
-            <HomeScreenBottomButton key={i} data={item} index={i} />
+            <HomeScreenBottomButton key={i} data={item} index={i} navigasyon={navigate} />
           ))}
         </View>
       </View>

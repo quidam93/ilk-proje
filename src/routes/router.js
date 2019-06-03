@@ -3,6 +3,7 @@ import {createStackNavigator,createAppContainer} from 'react-navigation';
 
 import HomeScreen from '../containers/HomeScreen/HomeScreen';
 import ContactScreen from '../containers/ContactScreen/ContactScreen';
+import ProjectScreen from '../containers/ProjectScreen/ProjectScreen';
 
 
 
@@ -12,6 +13,9 @@ const appStack = createStackNavigator({
     },
     ContactScreen:{
         screen:ContactScreen
+    },
+    ProjectScreen:{
+screen:ProjectScreen
     }
 })
 
