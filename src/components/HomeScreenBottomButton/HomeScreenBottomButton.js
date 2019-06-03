@@ -39,7 +39,7 @@ const HomeScreenBottomButton = props => {
     <TouchableOpacity style={buttonStyles} onPress={() => navigate(data.rPath)}>
       <View style={viewStyles}>
         <MaterialIcons name={`${data.icon}`} style={iconStyle} size={40} />
-        <Text style={{ color: "white" }}>{data.title}</Text>
+        <Text style={{ color: "white", paddingTop:8 }}>{data.title}</Text>
       </View>
     </TouchableOpacity>
   );

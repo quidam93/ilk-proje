@@ -2,14 +2,13 @@ import React,{Component} from 'react';
 import {View,Text} from 'react-native';
 
 
-class ProjectScreen extends Component{
+class SurveyScreen extends Component{
     render () {
-
         return(
             <View>
-                <Text>Project Screen</Text>
+                <Text> Survey Screen</Text>
             </View>
         )
     }
 }
-export default ProjectScreen;
+export default  SurveyScreen;

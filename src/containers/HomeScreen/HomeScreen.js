@@ -30,29 +30,29 @@ const buttonData = [
 
 const bottomButtonData = [
   {
-    icon: "date-range",
-    title: "TAKVİM",
-    rPath: "ContactScreen"
+    icon: "filter-vintage",
+    title: "GÜNCEL",
+    rPath: "UpToDateScreen"
   },
   {
-    icon: "date-range",
-    title: "TAKVİM",
-    rPath: "ContactScreen"
+    icon: "location-city",
+    title: "GÜMÜŞOVA",
+    rPath: "GumusovaScreen"
   },
   {
-    icon: "date-range",
-    title: "TAKVİM",
-    rPath: "ContactScreen"
+    icon: "folder-open",
+    title: "KURUMSAL",
+    rPath: "CorporateScreen"
   },
   {
-    icon: "date-range",
-    title: "TAKVİM",
-    rPath: "ContactScreen"
+    icon: "import-contacts",
+    title: "ANKET",
+    rPath: "SurveyScreen"
   },
   {
-    icon: "date-range",
-    title: "TAKVİM",
-    rPath: "ContactScreen"
+    icon: "link",
+    title: "NÖBETÇİ ECZANE",
+    rPath: "PharmacyScreen"
   },
   {
     icon: "work",
@@ -60,19 +60,19 @@ const bottomButtonData = [
     rPath: "ProjectScreen"
   },
   {
-    icon: "date-range",
-    title: "TAKVİM",
-    rPath: "ContactScreen"
+    icon: "keyboard",
+    title: "E-BELEDİYE",
+    rPath: "GovermentScreen"
   },
   {
-    icon: "date-range",
-    title: "TAKVİM",
-    rPath: "ContactScreen"
+    icon: "camera-alt",
+    title: "ÇEK&GÖNDER",
+    rPath: "CameraScreen"
   },
   {
-    icon: "date-range",
-    title: "TAKVİM",
-    rPath: "ContactScreen"
+    icon: "border-color",
+    title: "İSTEK&ŞİKAYET",
+    rPath: "WishesScreen"
   },
 ];
 

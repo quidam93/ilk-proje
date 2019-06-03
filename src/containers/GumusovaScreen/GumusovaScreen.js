@@ -2,14 +2,13 @@ import React,{Component} from 'react';
 import {View,Text} from 'react-native';
 
 
-class ProjectScreen extends Component{
+class GumusovaScreen extends Component{
     render () {
-
         return(
             <View>
-                <Text>Project Screen</Text>
+                <Text>GumusovaScreen</Text>
             </View>
         )
     }
 }
-export default ProjectScreen;
+export default GumusovaScreen;
