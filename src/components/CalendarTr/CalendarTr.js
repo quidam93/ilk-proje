@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Text, StyleSheet, ScrollView, View } from "react-native";
-import { Calendar } from "react-native-calendars";
+import { Text, StyleSheet, ScrollView, View} from "react-native";
+import { Calendar , DateObject} from "react-native-calendars";
 import {LocaleConfig} from 'react-native-calendars';
 
 
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     paddingTop: 5,
     borderBottomWidth: 1,
     borderColor: "#eee",
-    height: "100%"
+    height:350
   },
   text: {
     textAlign: "center",
@@ -62,6 +62,6 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: "gray",
+    backgroundColor: "white",
   }
 });
