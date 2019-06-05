@@ -22,9 +22,9 @@ const buttonData = [
     rPath: "ContactScreen3"
   },
   {
-    icon: "date-range",
-    title: "Takvim",
-    rPath: "ContactScreen4"
+    icon: "location-on",
+    title: "YOL TARİFİ",
+    rPath: "GoogleMapsScreen"
   }
 ];
 

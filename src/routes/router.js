@@ -12,6 +12,7 @@ import GumusovaScreen from '../containers/GumusovaScreen/GumusovaScreen';
 import CorporateScreen from '../containers/CorporateScreen/CorporateScreen';
 import GovermentScreen from '../containers/GovermentScreen/GovermentScreen';
 import CameraScreen from '../containers/CameraScreen/CameraScreen';
+import GoogleMapsScreen from '../containers/GoogleMapsScreen/GoogleMapsScreen';
 
 
 
@@ -48,6 +49,9 @@ const appStack = createStackNavigator({
     },
     CameraScreen:{
         screen: CameraScreen
+    },
+    GoogleMapsScreen:{
+        screen: GoogleMapsScreen
     },
 
 })
