@@ -13,6 +13,7 @@ import CorporateScreen from '../containers/CorporateScreen/CorporateScreen';
 import GovermentScreen from '../containers/GovermentScreen/GovermentScreen';
 import CameraScreen from '../containers/CameraScreen/CameraScreen';
 import GoogleMapsScreen from '../containers/GoogleMapsScreen/GoogleMapsScreen';
+import CalendarScreen from '../containers/CalendarScreen/CalendarScreen';
 
 
 
@@ -52,6 +53,9 @@ const appStack = createStackNavigator({
     },
     GoogleMapsScreen:{
         screen: GoogleMapsScreen
+    },
+    CalendarScreen:{
+        screen: CalendarScreen
     },
 
 })

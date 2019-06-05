@@ -12,7 +12,6 @@ const HomeScreenButton = props => {
 
   const textStyle = {
     color: "#2c313c",
-    size: "24",
   }
 
   const styles = {

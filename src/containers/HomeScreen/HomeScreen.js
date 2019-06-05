@@ -18,8 +18,8 @@ const buttonData = [
   },
   {
     icon: "date-range",
-    title: "Takvim",
-    rPath: "ContactScreen3"
+    title: "TAKVİM",
+    rPath: "CalendarScreen"
   },
   {
     icon: "location-on",

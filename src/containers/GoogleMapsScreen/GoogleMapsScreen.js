@@ -1,11 +1,11 @@
 import GoogleMaps from "../../services/maps/GoogleMaps";
 import React, { Component } from "react";
 
-class PharmacyScreen extends Component{
+class GoogleMapsScreen extends Component{
     render () {
         return(
             <GoogleMaps></GoogleMaps>
         )
     }
 }
-export default PharmacyScreen;
+export default GoogleMapsScreen;
